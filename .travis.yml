@@ -26,6 +26,7 @@ install:
   - sudo apt-get install libgtk-3-dev libgtk2.0-dev
   - sudo apt-get install -y python3-gi
   - sudo apt-get install --reinstall libgl1-mesa-dev
+  - sudo apt-get install qt5-qmake
     
 before_script:
   # Clone test apps
