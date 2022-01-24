@@ -21,8 +21,6 @@ install:
   # All this dependencies only to build tests application. No real dependency of this packages
   - sudo apt-get update
   - sudo apt-get -y install at-spi2-core
-  - sudo apt-get install -qq qt58base;
-  - sudo apt-get -y install qt58declarative qt58tools
   - sudo apt-get install xsel
   - sudo apt-get install libgtk-3-dev libgtk2.0-dev
   - sudo apt-get install -y python3-gi
