@@ -11,6 +11,7 @@ python:
   - "3.8"
 arch:
   - arm64
+  - amd64
 os:
   - linux
 before_install:
@@ -25,8 +26,7 @@ install:
   - sudo apt-get install libgtk-3-dev libgtk2.0-dev
   - sudo apt-get install -y python3-gi
   - sudo apt-get install --reinstall libgl1-mesa-dev
-  - source /opt/qt58/bin/qt58-env.sh;
-  
+    
 before_script:
   - xauth generate :99.0 . trusted
   # Clone test apps
