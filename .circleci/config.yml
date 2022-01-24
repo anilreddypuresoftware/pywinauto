@@ -32,7 +32,7 @@ jobs:
       - run:
           name: test
           command: |
-            pytest
+            python ./pywinauto/unittests/testall.py
 workflows:
   version: 2.1
   main:
