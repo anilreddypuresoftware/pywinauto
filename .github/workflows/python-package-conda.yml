@@ -30,7 +30,7 @@ jobs:
         pip install -r dev-requirements.txt
         pip install -U pywinauto
         pip install -U Pillow
-        sudo add-apt-repository -y ppa:beineri/opt-qt58-xenial
+        
         pip install python-xlib codecov coverage
         sudo apt-get update
         sudo apt-get -y install at-spi2-core
