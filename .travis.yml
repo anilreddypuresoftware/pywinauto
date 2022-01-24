@@ -28,7 +28,6 @@ install:
   - sudo apt-get install --reinstall libgl1-mesa-dev
     
 before_script:
-  - xauth generate :99.0 . trusted
   # Clone test apps
   - git init apps
   - cd apps
