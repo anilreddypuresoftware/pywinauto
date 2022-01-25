@@ -65,7 +65,7 @@ jobs:
         
         
   
-        chmod a+x $TRAVIS_BUILD_DIR/apps/Gtk_samples/gtk_example.py
+      
        
         python ./pywinauto/unittests/testall.py
         
