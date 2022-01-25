@@ -62,7 +62,7 @@ jobs:
         
         qmake
         make
-        chmod a+x send_keys_test_app
+        
         
   
         chmod a+x $TRAVIS_BUILD_DIR/apps/Gtk_samples/gtk_example.py
