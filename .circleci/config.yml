@@ -29,6 +29,35 @@ jobs:
              python setup.py install
              pip install -r requirements.txt
              pip install -r dev-requirements.txt
+             pip install -U pywinauto
+             pip install -U Pillow
+             pip install coverage
+             pip install python-xlib codecov coverage
+             sudo apt-get update
+             sudo apt-get -y install at-spi2-core
+             sudo apt-get install qt5-qmake
+             sudo apt-get install xsel
+             sudo apt-get install libgtk-3-dev libgtk2.0-dev
+             sudo apt-get install -y python3-gi
+             sudo apt-get install --reinstall libgl1-mesa-dev
+             sudo apt-get install xauth
+             pip install mouse
+             git init apps
+             cd apps
+             git remote add -f origin https://github.com/pywinauto/PywinautoTestapps/
+             git config core.sparseCheckout true
+             echo "MouseTester/source" >> .git/info/sparse-checkout
+             echo "SendKeysTester/source" >> .git/info/sparse-checkout
+             git pull origin master
+             # Build test apps
+             cd MouseTester/source
+             qmake
+             make
+             chmod a+x mousebuttons
+             cp mousebuttons ../
+             qmake
+             make
+             
       - run:
           name: test
           command: |
