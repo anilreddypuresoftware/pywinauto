@@ -5,6 +5,7 @@ import copy
 import sys
 import os
 import unittest
+import mouse
 if sys.platform == 'win32':
     import win32clipboard
     sys.path.append(".")
