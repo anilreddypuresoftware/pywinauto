@@ -30,6 +30,7 @@ jobs:
         pip install -r dev-requirements.txt
         pip install -U pywinauto
         pip install -U Pillow
+        pip install coverage
         
         pip install python-xlib codecov coverage
         sudo apt-get update
