@@ -67,7 +67,7 @@ jobs:
   
       
        
-        python ./pywinauto/unittests/testall.py
+        pytest
         
     
         
