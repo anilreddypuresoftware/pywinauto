@@ -45,7 +45,7 @@ jobs:
         sudo apt-get install xauth
        
         
-        xauth generate :99.0 . trusted
+        
         # Clone test apps
         git init apps
         cd apps
